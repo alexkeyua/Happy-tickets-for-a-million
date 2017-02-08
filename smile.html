@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My menu</title>
+  <style>
+   p {
+   font-size: 200px;
+   color: red;
+   text-align: center;
+   margin-top: 200px;
+   font-weight: bold;}
+   </style>
+   <script>
+   var num = 000000;
+   var count = 0;
+   function smile() {
+	for ( ; num <= 999999; num++) {
+		num = String(num);
+		var first = +num.charAt(0) + +num.charAt(1) + +num.charAt(2);
+		var second = +num.charAt(3) + +num.charAt(4) + +num.charAt(5);
+		if (first == second ) {
+			count++;
+		}
+		num = +num;
+	}
+	return count;
+}
+</script>
+</head>
+<body>
+<p>
+<script> document.write(smile());</script></p>
+</body>
+</html>
